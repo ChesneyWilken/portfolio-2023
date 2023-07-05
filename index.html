@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chesney Wilken</title>
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./resources/images/Logo-yellow.png" alt="Logo">
+          <p>Chesney Wilken</p>
+        </div>
+        <div class="menu-items">
+          <ul>
+            <li><a class="hvr-underline-from-left" href="#my-work-jump">My Work</a></li>
+            <li><a class="hvr-underline-from-left" href="#about-me-jump">About Me</a></li>
+            <li onclick="openPopup()"><a class="hvr-underline-from-left" id="contact-btn" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Contact Pop Up-->
+    <div class="contact-popup" id="popup">
+      <h3>Contact</h3>
+      <div class="img-container row">
+        <a href="https://www.linkedin.com/in/chesneywilken/"><img src="./resources/images/linkedin.png" alt="LinkedIn Icon"></a>
+        
+        <a href="https://github.com/ChesneyWilken"><img src="./resources/images/github-1.png" alt="GitHub Icon"></a>
+      </div>
+      <button type="button" onclick="closePopup()">Close</button>
+    </div>
+    
+    <!-- About me -->
+    <section class="about-me" id="about-me-jump">
+      <div class="continer">
+        <h1>About Me</h1>
+        <div class="row">
+          <div class="about-me-content">
+            <div class="about-me-img">
+              <img src="./resources/images/about-me.jpg" alt="Photo of the web designer">
+            </div>
+            <div class="about-me-text">
+              <p>As a former e-Commerce manager, I have a unique understanding of the industry and a proven track record of success in driving business growth and delivering results. However, I found a love for the technical side of e-Commerce and decided to switch career course and become a developer. I'm now skilled in HTML5, CSS3, and JavaScript, and have a deep understanding of the SASS platform Shopify. My problem-solving abilities and strong communication skills make me a valuable asset to any development team.</p>
+              <br>
+              <p>I received my BSc degree from Loughborough University where I played cricket for the MCCU academy. My experience has taught me the importance of adaptability and people management. I am a team player who is able to work effectively with cross-functional teams and to drive projects to completion.</p>
+              <br>
+              <p>I'm excited for the challenges and opportunities ahead as I continue my career as a developer. I look forward to making a meaningful impact in any new role.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Main featured work section built with Glide.js-->
+    <main>
+      <h2 id="my-work-jump">Featured Work</h2>
+      <div class="carousel">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+
+              <li class="glide__slide">
+                <div>
+                  <img src="./resources/images/flash-cards-react-app-white.png" alt="">
+                  <h3>React Flashcards App</h3>
+                  <p>Built using Redux and Redux Toolkit to manage the complex state of a flashcard-style quiz app & deployed on Netlify. Users can create their own topics, quizzes for those topics, and flashcards for those quizzes.</p>
+                </div>
+                <div class="row">
+                  <button class="project-btn" name="button"><a href="https://react-flash-cards-app.netlify.app/" target="_blank">View Project</a></button>
+                  <button class="project-btn" name="button"><a href="https://github.com/ChesneyWilken/flash-cards-app" target="_blank">View Repository</a></button>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div>
+                  <img src="./resources/images/appointment-app.png" alt="">
+                  <h3>Appointment Planner</h3>
+                  <p>A simple appointment planner built using React</p>
+                </div>
+                <div class="row">
+                  <button class="project-btn" name="button"><a href="https://react-appointmet-planner.netlify.app/contacts" target="_blank">View Project</a></button>
+                  <button class="project-btn" name="button"><a href="" target="_blank">View Repository</a></button>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div>
+                  <img src="./resources/images/colmar-academy.jpg" alt="">
+                  <h3>Colmar Academy</h3>
+                  <p>This website was build from scratch with only the image assets provided. Build using HTML & CSS.</p>
+                </div>
+                <div class="row">
+                  <button class="project-btn" name="button"><a href="https://chesneywilken.github.io/Colmar-Academy/" target="_blank">View Project</a></button>
+                  <button class="project-btn" name="button"><a href="https://github.com/ChesneyWilken/Colmar-Academy" target="_blank">View Repository</a></button>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div>
+                  <img src="./resources/images/arcade-game.png" alt="">
+                  <h3>Arcade Game</h3>
+                  <p>Classic arcade game only works on desktop. Built using almost entirely vanilla JavaScript.</p>
+                </div>
+
+                <div class="row">
+                  <button class="project-btn" name="button"><a href="https://chesneywilken.github.io/Arcade-Game/" target="_blank">View Project</a></button>
+                  <button class="project-btn" name="button"><a href="https://github.com/ChesneyWilken/Arcade-Game" target="_blank">View Repository</a></button>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div>
+                  <img src="./resources/images/Memory-game.png" alt="">
+                  <h3>Memory Game</h3>
+                  <p>Simple memory game, works on both mobile and desktop. Built using HTML, CSS & JavaScript.</p>
+                </div>
+              <div class="row">
+                <button class="project-btn" name="button"><a href="https://chesneywilken.github.io/Memory-Game/" target="_blank">View Project</a></button>
+                <button class="project-btn" name="button"><a href="https://github.com/ChesneyWilken/Memory-Game" target="_blank">View Repository</a></button>
+              </div>
+              
+              </li>
+            </ul>
+          </div>
+          <!-- Glide controls -->
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-angles-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-angles-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <nav class="footer">
+        <div class="info">
+          <i class="far fa-copyright"></i>
+          <p>2023 Chesney Wilken</p>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- Script for the contact pop-up -->
+    <script>
+      let popup = document.getElementById("popup");
+
+      let openPopup = () =>{
+        popup.style.display = "block";
+        popup.style.top = "10%";
+        popup.style.transform = "scale(1)"; 
+      }
+
+      let closePopup = () => {
+
+        popup.style.display = 'none';
+        popup.style.top = "0%";
+        popup.style.transform = "scale(0.1)";
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/e7fe26805b.js" crossorigin="anonymous"></script>
+    <!--Glide scripts -->
+    <script src="node_modules/@glidejs/glide/dist/glide.js"></script>
+    <script>
+      const options = {
+        type: 'carousel',
+        perView: 3,
+        breakpoints: {
+          480: {
+            perView: 1
+          },
+          1000: {
+            perView: 2
+          },
+          2000: {
+            perView: 3
+          },
+          2600: {
+            perView: 4
+          }
+          
+        }
+
+      }
+      new Glide('.glide', options).mount()
+    </script>
+
+  </body>
+</html>
