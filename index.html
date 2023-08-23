@@ -24,13 +24,17 @@
           <img src="./resources/images/Logo-yellow.png" alt="Logo">
           <p>Chesney Wilken</p>
         </div>
-        <div class="menu-items">
-          <ul>
+        <div id="menu-items">
+          <ul id="menu-links">
             <li><a href="#my-work-jump">My Work</a></li>
-            <li><a class="hvr-underline-from-left" href="#about-me-jump">About Me</a></li>
-            <li onclick="openPopup()"><a class="hvr-underline-from-left" id="contact-btn" href="#">Contact</a></li>
+            <li><a href="#about-me-jump">About Me</a></li>
+            <li onclick="openPopup()"><a id="contact-btn" href="#">Contact</a></li>
           </ul>
         </div>
+        <!-- Hamburger mobile nav --> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </nav>
     </header>
     
@@ -172,6 +176,19 @@
         popup.style.transform = "scale(0.1)";
       }
     </script>
+    <!-- Scrips for mobile nav -->
+    <script>
+      function myFunction() {
+        let mobileNav = document.getElementById("menu-items");
+        if (mobileNav.style.display === "block") {
+          mobileNav.style.display = "none";
+        } else {
+          mobileNav.style.display = "block";
+        }
+      }
+    </script>
+
+    <!-- Scripts for font awesome icons -->
     <script src="https://kit.fontawesome.com/e7fe26805b.js" crossorigin="anonymous"></script>
     <!--Glide scripts -->
     <script src="node_modules/@glidejs/glide/dist/glide.js"></script>
@@ -198,6 +215,5 @@
       }
       new Glide('.glide', options).mount()
     </script>
-
   </body>
 </html>
