@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Montserrat',sans-serif;
   height: 100%;
   width: 100%;
@@ -166,11 +166,36 @@ nav li a {
 }
 
  /* Nav media queries */
- @media only screen and (min-width: 220px) and (max-width: 480px) {
+ @media only screen and (min-width: 220px) and (max-width: 375px) {
 
   .logo img {
-    height: 50px;
+    height: 35px;
     padding-right: 5px;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-evenly;
+  }
+
+  nav li {
+    padding: 0px;
+  }
+
+  nav li a{
+    font-size: 16px;
+  }
+  
+ }
+
+ @media only screen and (min-width: 376px) and (max-width: 480px) {
+
+  .logo img {
+    height: 40px;
+    margin-right: 5px;
   }
 
   .logo p {
@@ -179,7 +204,11 @@ nav li a {
 
   nav li {
     padding-right: 5px;
-    font-size: 1.1em;
+  }
+
+
+  nav li a{
+    font-size: 16px; 
   }
 
   #popup.contact-popup {
@@ -212,7 +241,7 @@ nav li a {
   }
 }
 
- @media only screen and (max-width: 480px) {
+ /* @media only screen and (max-width: 480px) {
 
 }
 
@@ -228,7 +257,7 @@ nav li a {
 
 @media only screen and (max-width: 850px) {
 
-}
+} */
 
 /*------------------ About Me--------------------*/
 .about-me {
@@ -515,10 +544,6 @@ footer i {
     font-size: 0.8em;
   }
 
-  footer li {
-    padding-right: 0;
-    font-size: 0.7em;
-  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -526,9 +551,5 @@ footer i {
   .info {
     padding-right: 0;
     font-size: 0.75em;
-  }
-
-  li a {
-    font-size: 0.55em;
   }
 }
